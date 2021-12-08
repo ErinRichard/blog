@@ -1,2 +1,10 @@
-<h1>Hello, Rails!</h1>
-<p>Find me in app/views/articles/index.html.erb</p>
+<h1>Articles</h1>
+
+<ul>
+  <%# Controller instance variables (i.e. @articles) can be accessed by the view %>
+  <% @articles.each do |article| %>
+    <li>
+      <%= article.title %>
+    </li>
+  <% end %>
+</ul>
